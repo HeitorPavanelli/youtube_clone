@@ -1,0 +1,6 @@
+<app-header-yt (menuToggle)="abrirMenu($event)" (abrirDialog)="abrirDialogVideo($event)"
+    [usuarioLogado]="usuarioLogado" (textoDigitado)="textoDigitado($event)"></app-header-yt>
+
+<app-menu-yt [usuarioLogado]="usuarioId" (atualizarPagina)="atualizarVideos($event)"></app-menu-yt>
+
+<app-corpo-yt [atualizarPagina]="atualizarPagina" [filtroVideo]="textoDigitadoParaFiltrar"></app-corpo-yt>

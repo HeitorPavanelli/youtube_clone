@@ -1,0 +1,16 @@
+<main class="video-grid">
+  <div class="video-card" *ngFor="let video of videos">
+    <img src="https://picsum.photos/300/200" alt="Thumbnail" (click)="abrirLinkDoVideo(video)" />
+    <div class="video-info">
+      <div [style.background-color]="backgroundColor" class="user">
+        {{video.usuario?.nome?.charAt(0)?.toUpperCase()}}
+      </div>
+
+      <div>
+        <h3>{{video.titulo}}</h3>
+        <p>{{video.usuario?.nome}}</p>
+        <p>{{video.visualizacoes}} de visualizações • há {{video.dataPostada | conversorTempo}}</p>
+      </div>
+    </div>
+  </div>
+</main>

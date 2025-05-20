@@ -1,0 +1,20 @@
+<header class="yt-header">
+    <div class="left">
+        <i class="menu-icon" (click)="toggleMenu($event)">☰</i>
+        <img src="assets/icons/youtube.png" alt="YouTube Logo" />
+        <span>YouTube</span>
+    </div>
+
+    <div class="center">
+        <app-pesquisa-yt (texto)="filtrar($event)"></app-pesquisa-yt>
+    </div>
+
+    <div class="right">
+        <div class="user" (click)="toggleDropdown()" tabindex="0">
+            {{ usuarioLogado }}
+            <div class="dropdown" *ngIf="dropdownAberto">
+                <button (click)="voltarLogin()">Voltar para o login</button>
+            </div>
+        </div>
+    </div>
+</header>

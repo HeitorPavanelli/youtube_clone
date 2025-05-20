@@ -1,0 +1,24 @@
+<h2 mat-dialog-title>Adicionar Vídeo</h2>
+<form [formGroup]="videoForm" (ngSubmit)="onSubmit()" mat-dialog-content class="form-container">
+    <mat-form-field appearance="fill">
+        <mat-label>Titulo</mat-label>
+        <input matInput formControlName="titulo" />
+        <mat-error *ngIf="videoForm.get('titulo')?.invalid">Titulo obrigatório</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Link do vídeo</mat-label>
+        <input matInput formControlName="link" />
+        <mat-error *ngIf="videoForm.get('link')?.invalid">Link obrigatório</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Descrição</mat-label>
+        <input matInput formControlName="descricao" />
+    </mat-form-field>
+
+    <div class="button-container">
+        <button mat-button type="button" (click)="onCancel()">Cancelar</button>
+        <button mat-flat-button color="primary" type="submit" [disabled]="videoForm.invalid">Salvar</button>
+    </div>
+</form>

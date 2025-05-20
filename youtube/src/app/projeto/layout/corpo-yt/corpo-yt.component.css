@@ -1,0 +1,73 @@
+.video-grid {
+  margin-top: 72px;
+  margin-left: 260px;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.video-card {
+  cursor: pointer;
+}
+
+.video-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.video-info {
+  display: flex;
+  margin-top: 8px;
+  gap: 12px;
+}
+
+.video-info h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.video-info p {
+  margin: 2px 0;
+  font-size: 13px;
+  color: #606060;
+}
+
+.user {
+  width: 32px;
+  height: 32px;
+  background-color: #606060;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 32px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 8px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  min-width: 140px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  z-index: 1000;
+}
+
+.dropdown button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.dropdown button:hover {
+  background-color: #f0f0f0;
+}

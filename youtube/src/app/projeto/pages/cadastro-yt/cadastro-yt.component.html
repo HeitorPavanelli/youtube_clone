@@ -1,0 +1,20 @@
+<div class="login-container">
+    <div class="login-box">
+        <img src="assets/icons/youtube.png" alt="YouTube Logo" class="logo" />
+        <h2>Criar conta</h2>
+        <p>Preencha seus dados para continuar</p>
+
+        <form [formGroup]="cadastroForm">
+            <input placeholder="Nome usuario" formControlName="nome" />
+            <input style="margin-top: 10px;" type="email" placeholder="E-mail" formControlName="email" />
+            <input style="margin-top: 10px;" type="password" placeholder="Senha" formControlName="senha" />
+            <input style="margin-top: 10px;" type="password" placeholder="Confirmar Senha"
+                formControlName="confirmarSenha" />
+
+            <div class="actions">
+                <a href="#" class="link" (click)="voltarParaLogin()">Voltar</a>
+                <button type="button" (click)="cadastrarUsuario()">Cadastrar</button>
+            </div>
+        </form>
+    </div>
+</div>

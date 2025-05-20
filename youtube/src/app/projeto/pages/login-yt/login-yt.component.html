@@ -1,0 +1,20 @@
+<div class="login-container">
+  <div class="login-box">
+    <img src="assets/icons/youtube.png" alt="YouTube Logo" class="logo" />
+    <h2>Fazer login</h2>
+    <p>Use sua Conta do Google</p>
+
+
+    <form [formGroup]="loginForm">
+      <input type="email" placeholder="E-mail" formControlName="email"/>
+      <input style="margin-top: 10px;" type="password" placeholder="Senha" formControlName="senha"/>
+
+      <div class="actions">
+        <a href="#" class="link" (click)="criarNovaConta($event)">Crie uma conta</a>
+        <button style="margin-top: 10px;" type="submit" (click)="logarUsuario()">Login</button>
+      </div>
+    </form>
+
+
+  </div>
+</div>

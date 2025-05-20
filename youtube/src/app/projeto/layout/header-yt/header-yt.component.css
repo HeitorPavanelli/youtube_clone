@@ -1,0 +1,108 @@
+.yt-header {
+  height: 56px;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.yt-header .left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.yt-header .left img {
+  width: 30px;
+  height: 30px;
+}
+
+.yt-header .center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.yt-header .center input {
+  width: 60%;
+  max-width: 500px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+}
+
+.yt-header .center button {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-left: none;
+  background-color: #f8f8f8;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+}
+
+.yt-header .right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-right: 16px;
+}
+
+.yt-header .icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.yt-header .user {
+  width: 32px;
+  height: 32px;
+  background-color: #6d01e9;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 32px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 12px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  min-width: 160px;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.dropdown button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dropdown button:hover {
+  background-color: #f0f0f0;
+}

@@ -1,0 +1,11 @@
+<h2 mat-dialog-title>Vídeos postados na plataforma</h2>
+<div mat-dialog-content class="overflow-hidden">
+  <canvas baseChart
+          [data]="barChartData"
+          [options]="barChartOptions"
+          chartType="bar">
+  </canvas>
+</div>
+<div mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close (click)="fecharDialog()">Fechar</button>
+</div>
